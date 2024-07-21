@@ -13,6 +13,7 @@ chmod +x CheckIfFileExist.sh
 chmod +x CompareTwoNumbers.sh
 chmod +x Hello.txt
 chmod +x myDirectory
+chmod +x executeShells.sh
 
 ls -l
 
