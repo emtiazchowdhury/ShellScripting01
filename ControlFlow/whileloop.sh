@@ -1,9 +1,19 @@
 #!/bin/bash
 
-INSTANCE_ID="my name is emtiaz. I am learning shell scripting."
+number=1
 
-while [ "$INSTANCE_ID" != "running" ]; do
-    echo "Instance status: $INSTANCE_ID"
+while [ "$number" -le 10 ]; do
+if [ "$number" -le 10 ]; then
+    echo "number is still less than input"
+fi
+    echo "Your number is: $number"
+    ((number++))
 done
+echo "Exiting while loop"
 
-echo "Instance is now running."
+# if [ "$number" -le 10 ]; then
+#     echo "number is still less than input"
+# else
+#     echo "number is not less than input"
+# fi
+

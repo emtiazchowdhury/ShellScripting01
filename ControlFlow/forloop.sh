@@ -11,7 +11,7 @@ fruits=("Apple" "Pear" "Straberry" "Blackberry" "Blueberry")
 for fruit in "${fruits[@]}"; do
     echo "I like $fruit!"
     for name in "${names[@]}"; do
-        echo "My name is "$name"!"
+        echo "My name is $name!"
     done
 done
 
@@ -20,7 +20,7 @@ for name in Alice Jame Don; do
 done
 
 
-for number in {1..101}; do
+for number in {1..10}; do
     echo "$number"
 done
 
