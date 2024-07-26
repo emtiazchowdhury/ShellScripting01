@@ -15,3 +15,12 @@ if (( $(echo "$LOAD > $THRESHOLD" | bc -l) )); then
 else
     echo "CPU load is below $THRESHOLD."
 fi
+
+# Define the the Uptime of Server
+UPTIME=$(uptime | awk '{ print $3}')
+
+if [ "$UPTIME" -lt 10 ]; then
+    echo "Your uptime is $UPTIME and its less than 10 days"
+else
+    echo "Your uptime is $UPTIME and its more than 10 days"
+fi

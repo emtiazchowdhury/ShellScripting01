@@ -4,7 +4,7 @@
 #If the usage exceeds a certain threshold (e.g., 80%), it prints a warning message.
 
 # Define the threshold
-THRESHOLD=982096284
+THRESHOLD=50
 
 # Get the current disk usage
 USAGE=$(df / | grep / | awk '{ print $5 }' | sed 's/%//g')
