@@ -10,6 +10,6 @@ aws_directory="modernaapp"
 if [ -d "$local_directory" ]; then
     aws s3 sync $local_directory s3://$aws_directory
     echo "backup completed"
-else 
+else
     echo "$local_directory doesnt exist"
-fi  
+fi
