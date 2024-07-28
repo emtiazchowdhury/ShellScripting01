@@ -14,9 +14,9 @@
 uploadFiletoS2Bucket="$(aws s3 cp list.txt s3://mytestbucket45184/)"
 echo "File $uploadFiletoS2Bucket uploaded to bucket"
 
-# #List IAM users
-# listofIMAUsers="$(aws iam list-users --output json)"
-# echo listofIMAUsers
+#List IAM users
+listofIMAUsers="$(aws iam list-users --output json)"
+echo listofIMAUsers
 
 # Make s3 bucket 
 # aws s3 mb s3://mytestbucket45184
@@ -40,6 +40,3 @@ echo "File $uploadFiletoS2Bucket uploaded to bucket"
 
 
 grep 'Apple' list.txt
-
-
-
